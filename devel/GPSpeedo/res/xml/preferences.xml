@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  	xmlns:android="http://schemas.android.com/apk/res/android">
+	<CheckBoxPreference 
+		android:title="HUD" 
+		android:summaryOn="HUD Display" 
+		android:key="hud" 
+		android:summaryOff="Normal Display">
+	</CheckBoxPreference>
+	<ListPreference 
+		android:summary="Display Units" 
+		android:dialogTitle="@string/title_set_units"
+		android:title="@string/title_set_units"
+		android:key="units" 
+		android:entryValues="@array/unitsValues" 
+		android:entries="@array/unitsValues">
+	</ListPreference>
+	<ListPreference
+		android:summary="Display Color"
+		android:dialogTitle="Color"
+		android:title="@string/title_color"
+		android:key="color"
+		android:entryValues="@array/colorValues"
+		android:entries="@array/colorValues"
+		></ListPreference>
+	<ListPreference
+		android:summary="Number of digits to display"
+		android:dialogTitle="Padding"
+		android:title="@string/title_padding"
+		android:key="padding"
+		android:entryValues="@array/paddingStrings"
+		android:entries="@array/paddingStrings"	
+		/>
+	<CheckBoxPreference
+		android:title="Full Screen"
+		android:summaryOn="Only GPSPeedo visible"
+		android:summaryOff="Android Notification Bar Visible"
+		android:key="fs"></CheckBoxPreference>
+	<org.homelinux.pwarren.gpspeedo.SeekBarPreference android:key="text_size2"
+        android:title="Font Size"
+        android:summary="Display Fontsize"
+        android:defaultValue="260"
+        android:text=" pixels"
+        android:max="999"
+        />
+		
+</PreferenceScreen>
